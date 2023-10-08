@@ -1,0 +1,53 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+game_board                                                                        0x018B      18
+win                                                                               0x019D      16
+k                                                                                 0x01AD       2
+row                                                                               0x01AF       4
+txt                                                                               0x01B3       2
+_base_y                                                                           0x01B5       4
+_lcd_x                                                                            0x01B9       1
+_lcd_y                                                                            0x01BA       1
+_lcd_maxx                                                                         0x01BB       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+player                                                                            R4,R5        2
+count                                                                             R6,R7        2
+state                                                                             R8,R9        2
+r                                                                                 R10,R11      2
+c                                                                                 R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+keypad                                                                            0x00090     60
+init                                                                              0x000CC    104
+showBoard                                                                         0x00134     54
+check_win                                                                         0x0016A    101
+main                                                                              0x001CF    155
+_lcd_delay_G100                                                                   0x0026A      4
+_lcd_ready                                                                        0x0026E     17
+_lcd_write_nibble_G100                                                            0x0027F     10
+_lcd_write_data                                                                   0x00289     15
+_lcd_read_nibble_G100                                                             0x00298      9
+lcd_read_byte0_G100                                                               0x002A1      9
+lcd_gotoxy                                                                        0x002AA     20
+lcd_clear                                                                         0x002BE     21
+lcd_putchar                                                                       0x002D3     39
+lcd_puts                                                                          0x002FA     17
+_long_delay_G100                                                                  0x0030B      5
+_lcd_init_write_G100                                                              0x00310     12
+lcd_init                                                                          0x0031C     52
+put_buff_G101                                                                     0x00350     64
+_print_G101                                                                       0x00390    306
+sprintf                                                                           0x004C2     52
+strcpy                                                                            0x004F6     13
+strlen                                                                            0x00503     12
+strlenf                                                                           0x0050F     13
